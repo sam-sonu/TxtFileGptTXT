@@ -1,0 +1,17 @@
+Hi Team,
+
+I would like to provide an update regarding the vulnerabilities reported earlier.
+
+As per the last report, I have already updated the code and also applied the required frontend Nginx configuration changes. However, we are still facing the same issue with the Jenkins server, due to which we are currently unable to create a new frontend build.
+
+Once the Jenkins issue is resolved, I will push the latest changes and generate the updated build. I will keep you informed as soon as the build is successfully created and deployed.
+
+Thank you for your patience.
+
+Best Regards,  
+Sonu Kumar
+
+Update on Vulnerabilities Fix and Frontend Build Issue
+
+
+
