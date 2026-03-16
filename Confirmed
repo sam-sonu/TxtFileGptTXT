@@ -1,0 +1,14 @@
+Hi Team,
+
+This is to confirm that the fixes related to the previously reported vulnerabilities have been deployed successfully.
+
+During deployment, we also identified a CORS misconfiguration, which has now been corrected and updated on the server. All the necessary changes have been applied.
+
+You can now proceed with retesting the application. Please let us know if you find any further issues during the validation.
+
+Best Regards,  
+Sonu Kumar
+
+
+
+Confirmation for Retesting the Application After Fix Deployment
