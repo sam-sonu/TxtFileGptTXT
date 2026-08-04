@@ -1,17 +1,1041 @@
-Urgent: GrowHive ID Expired – Unable to Access System & Configure Jira Token
+Master Prompt: Build a Production-Ready Multi-Tenant Website Builder (React Frontend Only)
 
+You are an Expert Software Architect, Senior React Developer, UI/UX Designer, and Security Engineer.
 
-Dear Team,
+Your task is to build a production-ready Website Builder Platform that allows me to create multiple client websites from a single codebase.
 
-I would like to inform you that the GrowHive ID (growhive.id), which is being used as the core ID for the Grow High program, has expired and currently does not exist in the system.
+The code should be clean, modular, scalable, maintainable, and ready for future backend integration.
 
-Due to this issue, I am unable to log in to the platform and cannot configure or update the Jira token required for program initiation, execution tracking, and timeline management.
+⸻
 
-I have already connected with Nitin and Rohit regarding this matter; however, the ID has not yet been reactivated.
+IMPORTANT
 
-This is currently blocking our work, and we require urgent support to reactivate the ID or provide an alternative solution so that we can restore access and proceed with the necessary configurations.
+This is Version 1.
 
-Kindly look into this on priority and help us resolve the issue at the earliest.
+There is NO backend.
 
-Thanks & Regards,  
-Sonu Kumar
+Everything should work using local JSON files.
+
+Every website’s data must be loaded dynamically from JSON files using JavaScript.
+
+The architecture should be designed so that in Version 2 I can connect Django, FastAPI, Node.js, Laravel, Firebase, Supabase, PostgreSQL, MongoDB, or MySQL without changing the frontend.
+
+⸻
+
+TECH STACK
+
+Use only modern technologies.
+
+* React.js (Latest)
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+* Zustand
+* React Hook Form
+* Zod
+* Framer Motion
+* GSAP
+* Swiper.js
+* React Icons
+* Lucide Icons
+
+Use ESLint, Prettier and modern coding standards.
+
+⸻
+
+DESIGN STYLE
+
+The UI must look premium.
+
+Take inspiration from
+
+* Apple
+* Stripe
+* Linear
+* Framer
+* Vercel
+* Shopify
+* Notion
+
+Use
+
+* Glassmorphism
+* Soft shadows
+* Modern gradients
+* Rounded corners
+* Premium typography
+* Large hero sections
+* Smooth animations
+* Beautiful hover effects
+* Responsive spacing
+* Micro interactions
+
+Support
+
+* Desktop
+* Tablet
+* Mobile
+
+Support
+
+* Light Mode
+* Dark Mode
+
+⸻
+
+PROJECT GOAL
+
+Create ONE Website Builder capable of generating unlimited websites from JSON configuration.
+
+Example websites
+
+* Camera Rental
+* Bike Rental
+* Scooter Rental
+* Car Rental
+* Furniture Rental
+* Restaurant
+* Grocery Store
+* Electronics
+* Fashion
+* Medical
+* Service Company
+* Portfolio
+* Agency
+* Startup
+* Product Landing Page
+
+No code should change.
+
+Only JSON changes.
+
+⸻
+
+PROJECT STRUCTURE
+
+Use Feature Based Architecture.
+
+Create folders like
+
+src
+
+components
+
+layouts
+
+pages
+
+hooks
+
+utils
+
+services
+
+animations
+
+context
+
+store
+
+assets
+
+config
+
+client-data
+
+auth
+
+constants
+
+types
+
+styles
+
+Every component should be reusable.
+
+⸻
+
+WEBSITE LAYOUT
+
+Each website should automatically generate a beautiful single-page website.
+
+Sections
+
+Sticky Header
+
+Navigation
+
+Hero Banner
+
+Hero Title
+
+Hero Subtitle
+
+CTA Buttons
+
+Featured Products Carousel
+
+Featured Services Carousel
+
+Categories
+
+Featured Cards
+
+About
+
+Bio
+
+Testimonials
+
+Gallery
+
+Statistics
+
+FAQs
+
+Partners
+
+Contact Form
+
+Google Map
+
+Footer
+
+Floating WhatsApp
+
+Floating Call Button
+
+Back To Top Button
+
+Newsletter
+
+⸻
+
+HEADER
+
+Logo
+
+Navigation
+
+Search
+
+Theme Toggle
+
+Call Button
+
+WhatsApp Button
+
+Language Switch
+
+Sticky on Scroll
+
+Animated Menu
+
+Mobile Drawer
+
+⸻
+
+HERO
+
+Editable Banner
+
+Editable Background
+
+Animated Heading
+
+Animated Subtitle
+
+Animated CTA
+
+Background Video Support
+
+Image Slider
+
+Gradient Overlay
+
+⸻
+
+PRODUCTS
+
+Every Product supports
+
+Image
+
+Gallery
+
+Name
+
+Description
+
+Price
+
+Old Price
+
+Sale Price
+
+Discount Badge
+
+New Badge
+
+Best Seller
+
+Featured
+
+Category
+
+Stock
+
+Rating
+
+Reviews
+
+Hide
+
+Show
+
+Quantity
+
+SKU
+
+Rental Price
+
+Rental Available
+
+Buy Button
+
+Rent Button
+
+Add To Cart
+
+Wishlist
+
+Compare
+
+⸻
+
+SERVICES
+
+Support
+
+Icon
+
+Image
+
+Description
+
+Button
+
+Badge
+
+Featured
+
+Sorting
+
+Hide
+
+Show
+
+⸻
+
+CART
+
+Selling Mode
+
+Add to Cart
+
+Remove
+
+Quantity
+
+Coupon
+
+Subtotal
+
+Tax
+
+Shipping
+
+Grand Total
+
+Checkout
+
+⸻
+
+Rental Mode
+
+Select Product
+
+Rent Start Date
+
+Rent End Date
+
+Quantity
+
+Days
+
+Price
+
+Total
+
+⸻
+
+PAYMENT
+
+Support
+
+PhonePe
+
+Google Pay
+
+Paytm
+
+UPI
+
+Bank Transfer
+
+Cash
+
+QR Code
+
+If Mobile
+
+Open payment app automatically.
+
+If Desktop
+
+Display QR Code.
+
+Super Admin can
+
+Enable
+
+Disable
+
+Any payment method.
+
+⸻
+
+WHATSAPP ORDER
+
+Selling
+
+Generate message
+
+Customer Name
+
+Phone
+
+Address
+
+Product
+
+Quantity
+
+Price
+
+Total
+
+Open WhatsApp automatically.
+
+Rental
+
+Generate message
+
+Customer Name
+
+Phone
+
+Rental Product
+
+Rental Date
+
+Return Date
+
+Total Days
+
+Price
+
+Open WhatsApp.
+
+Admin should only configure the WhatsApp number.
+
+⸻
+
+WEBSITE MODES
+
+Selling Website
+
+Rental Website
+
+Service Website
+
+Hybrid Website
+
+Portfolio
+
+Agency
+
+Landing Page
+
+Enable or Disable modules based on business type.
+
+⸻
+
+ADMIN PANEL
+
+Login required.
+
+Role
+
+Admin
+
+Admin Permissions
+
+Add Products
+
+Delete Products
+
+Hide Products
+
+Show Products
+
+Update Price
+
+Sale Badge
+
+Manage Stock
+
+Manage Services
+
+Edit Carousel
+
+Upload Images
+
+Manage Categories
+
+Cannot edit website design.
+
+⸻
+
+SUPER ADMIN PANEL
+
+Complete control.
+
+Can edit
+
+Theme
+
+Logo
+
+Colors
+
+Typography
+
+Header
+
+Footer
+
+Hero
+
+Banner
+
+Navigation
+
+About
+
+Bio
+
+Contact
+
+Google Map
+
+Social Links
+
+Sections
+
+Cards
+
+Testimonials
+
+FAQ
+
+Products
+
+Services
+
+Payment
+
+WhatsApp
+
+Analytics
+
+Export JSON
+
+Import JSON
+
+Backup JSON
+
+Restore JSON
+
+Clone Website
+
+Delete Website
+
+Create Website
+
+Hide Section
+
+Show Section
+
+Enable Dark Mode
+
+Enable Light Mode
+
+Enable Search
+
+Enable Cart
+
+Enable Rent
+
+Enable Buy
+
+Enable Payment
+
+Enable WhatsApp
+
+Everything should be configurable.
+
+⸻
+
+WEBSITE CREATOR
+
+Create a setup wizard.
+
+Ask
+
+Business Name
+
+Business Type
+
+Theme
+
+Primary Color
+
+Secondary Color
+
+Logo
+
+Phone
+
+WhatsApp
+
+Email
+
+Address
+
+Currency
+
+Language
+
+Products
+
+Services
+
+Payment Methods
+
+Rental
+
+Selling
+
+Automatically generate JSON.
+
+⸻
+
+AUTHENTICATION
+
+Even though there is no backend, build a backend-ready authentication system.
+
+Use
+
+JWT architecture
+
+Refresh Token architecture
+
+Protected Routes
+
+Role Based Authentication
+
+Access Control
+
+Secure Session
+
+Token Expiration
+
+Remember Me
+
+Auto Logout
+
+Password Validation
+
+Sanitize Inputs
+
+Prevent XSS
+
+Prevent CSRF
+
+Secure Storage
+
+Use mock users.json now.
+
+Later it should work with real backend APIs without frontend changes.
+
+⸻
+
+JSON STRUCTURE
+
+Every website should have
+
+site.json
+
+products.json
+
+services.json
+
+categories.json
+
+theme.json
+
+settings.json
+
+users.json
+
+payments.json
+
+testimonials.json
+
+faq.json
+
+gallery.json
+
+Everything must be editable.
+
+⸻
+
+COMPONENTS
+
+Build reusable components.
+
+Button
+
+Input
+
+Card
+
+Modal
+
+Drawer
+
+Sidebar
+
+Navbar
+
+Footer
+
+Carousel
+
+Hero
+
+Product Card
+
+Service Card
+
+Gallery
+
+Accordion
+
+Tabs
+
+Toast
+
+Alert
+
+Loader
+
+Skeleton
+
+Badge
+
+Avatar
+
+Dropdown
+
+Pagination
+
+Table
+
+Charts
+
+Analytics Cards
+
+Charts
+
+Filters
+
+Search
+
+Everything reusable.
+
+⸻
+
+ANIMATIONS
+
+Use GSAP and Framer Motion.
+
+Include
+
+Page Transition
+
+Scroll Reveal
+
+Fade
+
+Slide
+
+Zoom
+
+Scale
+
+Rotate
+
+Hero Animation
+
+Floating Objects
+
+Gradient Animation
+
+Button Hover
+
+Card Hover
+
+Parallax
+
+Smooth Scroll
+
+Animated Navbar
+
+Animated Sidebar
+
+Animated Drawer
+
+Loading Skeleton
+
+Animated Counter
+
+Image Reveal
+
+Carousel Transition
+
+Toast Animation
+
+Modal Animation
+
+Micro Interactions
+
+Use GPU-accelerated animations for 60 FPS.
+
+⸻
+
+PERFORMANCE
+
+Target Lighthouse
+
+Performance 95+
+
+Accessibility 100
+
+SEO 100
+
+Best Practices 100
+
+Optimize
+
+Lazy Loading
+
+Dynamic Imports
+
+Image Optimization
+
+Code Splitting
+
+Memoization
+
+Virtualization
+
+Tree Shaking
+
+Caching
+
+⸻
+
+SECURITY
+
+Prepare for production.
+
+Secure routing
+
+Protected Admin Routes
+
+Protected Super Admin Routes
+
+Role Middleware
+
+JWT Ready
+
+Refresh Token Ready
+
+Input Validation
+
+Sanitization
+
+Prevent XSS
+
+Prevent CSRF
+
+No hardcoded secrets
+
+Secure Storage
+
+Future API Ready
+
+⸻
+
+FUTURE BACKEND
+
+Architecture must support
+
+Django
+
+FastAPI
+
+Node.js
+
+Express
+
+Laravel
+
+Supabase
+
+Firebase
+
+MongoDB
+
+PostgreSQL
+
+MySQL
+
+without changing UI.
+
+⸻
+
+CODE QUALITY
+
+Follow
+
+SOLID
+
+DRY
+
+Clean Architecture
+
+Reusable Hooks
+
+Reusable Components
+
+Type Safety
+
+Error Boundaries
+
+Loading States
+
+Empty States
+
+Consistent Folder Structure
+
+Comment important logic.
+
+Write production-quality code only.
+
+⸻
+
+BONUS FEATURES
+
+Include
+
+Website Import/Export
+
+Duplicate Website
+
+Theme Templates
+
+Color Presets
+
+Font Presets
+
+Undo/Redo
+
+Drag-and-Drop Section Reordering
+
+Media Manager
+
+Image Compression
+
+Image Cropper
+
+Search Across Admin
+
+Keyboard Shortcuts
+
+Notification System
+
+Activity Log
+
+Recent Changes
+
+JSON Validator
+
+Preview Before Publish
+
+Draft Mode
+
+Publish Mode
+
+SEO Manager
+
+Open Graph Settings
+
+Favicon Manager
+
+Custom CSS
+
+Custom JavaScript
+
+Analytics Dashboard
+
+PWA Support
+
+Offline Support
+
+Multi-language Ready
+
+RTL Support
+
+Accessibility Compliance
+
+⸻
+
+FINAL DELIVERABLE
+
+Generate a complete, production-ready React.js Website Builder with a premium modern UI, smooth GSAP and Framer Motion animations, JSON-based dynamic content, role-based Admin and Super Admin panels, website creation wizard, reusable component library, scalable architecture, secure authentication design, payment abstraction layer, WhatsApp ordering, responsive design, SEO optimization, and a codebase that is ready for seamless future backend integration without requiring frontend refactoring.
+
+The output should be organized as a real production project with proper folder structure, reusable code, and detailed implementation—not a demo or prototype.
