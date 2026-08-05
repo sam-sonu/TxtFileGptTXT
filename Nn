@@ -1,0 +1,730 @@
+PRIMARY GOAL
+
+Convert the project into a true Multi-Tenant SaaS Platform.
+
+Requirements:
+
+* One frontend
+* One backend
+* One database
+* Unlimited client websites
+* Separate client domains
+* Separate client admin panels
+* One global Super Admin panel
+
+⸻
+
+EXISTING PROJECT REVIEW
+
+First, analyze the entire codebase and provide:
+
+* Current architecture
+* Folder structure
+* Authentication flow
+* API structure
+* Database schema
+* Missing SaaS features
+* Security issues
+* Performance issues
+* Scalability limitations
+
+Then prepare a migration plan before modifying the code.
+
+⸻
+
+MULTI-TENANT ARCHITECTURE
+
+Implement tenant-based architecture.
+
+Every website belongs to a Company (Tenant).
+
+Every record must belong to a company.
+
+Examples
+
+Company
+
+Website
+
+Products
+
+Services
+
+Orders
+
+Categories
+
+Media
+
+Users
+
+Settings
+
+Payments
+
+Analytics
+
+Every table must include
+
+company_id
+
+Every API request must automatically determine the active company based on the request domain (Host header).
+
+Never expose one company’s data to another.
+
+⸻
+
+DOMAIN-BASED WEBSITE LOADING
+
+Support custom domains.
+
+Examples
+
+camera.com
+
+bike.com
+
+restaurant.com
+
+store.com
+
+All point to the same backend.
+
+Backend should detect
+
+request.host
+
+Find matching company.
+
+Load
+
+Theme
+
+Logo
+
+Products
+
+Services
+
+Menus
+
+Pages
+
+Settings
+
+Payment Configuration
+
+Contact Details
+
+Everything dynamically.
+
+No code changes required when adding a new client.
+
+⸻
+
+SUPER ADMIN WEBSITE
+
+Main Domain
+
+https://mymainwebsite.com
+
+Homepage should contain
+
+Landing Page
+
+Services
+
+Pricing
+
+Portfolio
+
+Showcase
+
+Client List
+
+Testimonials
+
+Contact
+
+About
+
+Blog
+
+⸻
+
+SUPER ADMIN LOGIN
+
+https://mymainwebsite.com/admin
+
+Only platform administrators can log in.
+
+Dashboard should manage
+
+Companies
+
+Domains
+
+Subscriptions
+
+Plans
+
+Users
+
+Themes
+
+Templates
+
+Analytics
+
+Payments
+
+Orders
+
+Media
+
+Logs
+
+Backups
+
+Notifications
+
+Global Settings
+
+System Health
+
+API Keys
+
+Create Website
+
+Clone Website
+
+Delete Website
+
+Suspend Website
+
+Activate Website
+
+Assign Domains
+
+Generate Demo Website
+
+Export Client
+
+Import Client
+
+Role Management
+
+⸻
+
+CLIENT WEBSITE
+
+Example
+
+https://camera.com
+
+Displays only that company’s website.
+
+No platform branding.
+
+Only client branding.
+
+⸻
+
+CLIENT ADMIN
+
+https://camera.com/admin
+
+Client logs into their own dashboard.
+
+Client can edit
+
+Products
+
+Services
+
+Orders
+
+Prices
+
+Discounts
+
+Stock
+
+Banner Images
+
+Gallery
+
+Pages
+
+Contact Information
+
+WhatsApp Number
+
+Payment Settings
+
+Business Hours
+
+Testimonials
+
+FAQs
+
+SEO
+
+Cannot modify
+
+System Settings
+
+Platform Theme Engine
+
+Other Companies
+
+Global Templates
+
+⸻
+
+WEBSITE CREATION WIZARD
+
+Super Admin clicks
+
+Create Website
+
+Wizard should collect
+
+Business Name
+
+Business Type
+
+Industry
+
+Domain
+
+Logo
+
+Theme
+
+Colors
+
+Fonts
+
+Phone
+
+Email
+
+WhatsApp
+
+Address
+
+Currency
+
+Language
+
+Products Enabled
+
+Services Enabled
+
+Rental Mode
+
+Selling Mode
+
+Online Payment
+
+WhatsApp Ordering
+
+SEO
+
+Social Links
+
+Generate
+
+Company
+
+Website
+
+Admin User
+
+Default Theme
+
+Default Data
+
+Storage
+
+Permissions
+
+Automatically.
+
+⸻
+
+DOMAIN MANAGEMENT
+
+Allow Super Admin to
+
+Add Domain
+
+Verify Domain
+
+Remove Domain
+
+Redirect Domain
+
+Subdomain Support
+
+SSL Status
+
+DNS Instructions
+
+Auto Configuration Ready
+
+Support
+
+example.com
+
+www.example.com
+
+shop.example.com
+
+⸻
+
+AUTHENTICATION
+
+Improve authentication.
+
+Support
+
+JWT Access Token
+
+Refresh Token
+
+Role Based Access
+
+Permission Based Access
+
+Protected Routes
+
+Secure Cookies
+
+Remember Login
+
+Session Timeout
+
+Multi Device Login
+
+Logout All Devices
+
+Password Reset
+
+Email Verification
+
+2FA Ready
+
+Audit Logs
+
+Never allow cross-company access.
+
+⸻
+
+ROLE SYSTEM
+
+Platform Super Admin
+
+Platform Admin
+
+Support Staff
+
+Sales Team
+
+Client Owner
+
+Client Admin
+
+Client Staff
+
+Customer
+
+Roles should be configurable.
+
+⸻
+
+WEBSITE ENGINE
+
+Every client website should be generated dynamically.
+
+Pages
+
+Home
+
+About
+
+Products
+
+Services
+
+Gallery
+
+Testimonials
+
+FAQs
+
+Contact
+
+Blogs
+
+Privacy Policy
+
+Terms
+
+404
+
+Coming Soon
+
+Maintenance
+
+Enable or Disable pages.
+
+⸻
+
+TEMPLATE ENGINE
+
+Support multiple templates.
+
+Modern
+
+Minimal
+
+Business
+
+Restaurant
+
+Rental
+
+Medical
+
+Agency
+
+Portfolio
+
+Clients should be able to switch templates without losing data.
+
+⸻
+
+PAYMENT MODULE
+
+Support
+
+PhonePe
+
+Google Pay
+
+Paytm
+
+UPI
+
+Razorpay (future)
+
+Stripe (future)
+
+Cash
+
+Bank Transfer
+
+QR Payment
+
+Super Admin controls which methods are available platform-wide.
+
+Client enables or disables the methods they want to use.
+
+⸻
+
+WHATSAPP ORDERING
+
+Support
+
+Product Orders
+
+Rental Requests
+
+Booking Requests
+
+Generate formatted WhatsApp messages with
+
+Customer Details
+
+Products
+
+Rental Dates
+
+Quantity
+
+Price
+
+Total
+
+Automatically open WhatsApp.
+
+⸻
+
+MEDIA MANAGER
+
+Shared media library
+
+Folders
+
+Compression
+
+Cropping
+
+Rename
+
+Delete
+
+Replace
+
+Image Optimization
+
+⸻
+
+ANALYTICS
+
+Platform Dashboard
+
+Revenue
+
+Active Clients
+
+New Clients
+
+Orders
+
+Visitors
+
+Storage Usage
+
+Bandwidth
+
+Payments
+
+Client Dashboard
+
+Orders
+
+Sales
+
+Visitors
+
+Products
+
+Top Categories
+
+Revenue
+
+⸻
+
+PERFORMANCE
+
+Optimize
+
+Lazy Loading
+
+Code Splitting
+
+Caching
+
+Image Optimization
+
+Virtual Lists
+
+Memoization
+
+Tree Shaking
+
+Skeleton Loaders
+
+Target Lighthouse Score
+
+95+
+
+⸻
+
+SECURITY
+
+Perform a complete security audit.
+
+Fix
+
+Broken Authentication
+
+Insecure APIs
+
+SQL Injection Risks
+
+XSS
+
+CSRF
+
+Rate Limiting
+
+Input Validation
+
+Authorization Issues
+
+Tenant Isolation
+
+Audit Logging
+
+Secure Headers
+
+Password Policies
+
+⸻
+
+CODE REFACTORING
+
+Refactor without breaking functionality.
+
+Apply
+
+SOLID
+
+DRY
+
+Clean Architecture
+
+Feature-Based Modules
+
+Reusable Components
+
+Reusable Hooks
+
+Reusable Services
+
+Consistent API Layer
+
+Error Boundaries
+
+Centralized State Management
+
+Type Safety
+
+⸻
+
+FINAL DELIVERABLE
+
+Upgrade the existing frontend and backend into a production-grade, enterprise-level Multi-Tenant SaaS Website Builder with:
+
+* One React frontend
+* One backend
+* One database
+* Domain-based tenant detection
+* Super Admin portal
+* Client Admin portal
+* Dynamic website engine
+* Website creation wizard
+* Domain management
+* Secure JWT authentication
+* Role and permission management
+* Payment abstraction layer
+* WhatsApp ordering
+* Analytics
+* Template engine
+* Scalable architecture capable of supporting thousands of client websites.
+
+Before writing code, produce a gap analysis and migration roadmap. Then implement the changes incrementally with clear commit-sized updates, ensuring backward compatibility wherever possible.
